@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="ServiceFramework.aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/exploded-bundles/ServiceFramework.aar/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/exploded-bundles/ServiceFramework.aar/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/exploded-bundles/ServiceFramework.aar/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
