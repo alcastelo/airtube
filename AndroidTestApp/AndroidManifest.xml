@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thinktube.airtube.testservice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="AirTube Test"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.thinktube.airtube.android.app.TestClientActivity"
+            android:label="AirTube TestClient"
+            android:taskAffinity="com.thinktube.airtube.testservice.TestClient"
+            android:process="com.thinktube.airtube.testservice.TestClient" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinktube.airtube.android.app.TestServiceActivity"
+            android:label="AirTube TestService"
+            android:taskAffinity="com.thinktube.airtube.testservice.TestService"
+            android:process="com.thinktube.airtube.testservice.TestService" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

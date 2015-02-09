@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thinktube.service"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.thinktube.airtube.android.app.VideoSenderActivity"
+            android:label="VideoSender"
+            android:screenOrientation="landscape"
+            android:taskAffinity="com.thinktube.service.VideoSenderActivity"
+            android:process="com.thinktube.service.VideoSenderActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinktube.airtube.android.app.VideoReceiverActivity"
+            android:label="VideoReceiver"
+            android:screenOrientation="landscape"
+            android:taskAffinity="com.thinktube.service.VideoReceiverActivity"
+            android:process="com.thinktube.service.VideoReceiverActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinktube.airtube.android.app.VideoReceiverMultiActivity"
+            android:label="VideoReceiverMulti"
+            android:screenOrientation="landscape"
+            android:taskAffinity="com.thinktube.service.VideoReceiverActivity"
+            android:process="com.thinktube.service.VideoReceiverActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinktube.airtube.android.app.VideoDuplexActivity"
+            android:label="VideoDuplex"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.thinktube.service.VideoDuplexActivity"
+            android:process="com.thinktube.service.VideoDuplexActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinktube.airtube.android.app.VideoCallActivity"
+            android:label="VideoCall"
+             android:screenOrientation="portrait"
+            android:taskAffinity="com.thinktube.service.VideoCallActivity"
+            android:process="com.thinktube.service.VideoCallActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinktube.airtube.android.app.AudioSenderActivity"
+            android:label="AudioSender"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.thinktube.service.AudioSenderActivity"
+            android:process="com.thinktube.service.AudioSenderActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinktube.airtube.android.app.AudioReceiverActivity"
+            android:label="AudioReceiver"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.thinktube.service.AudioReceiverActivity"
+            android:process="com.thinktube.service.AudioReceiverActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thinktube.airtube.android.app.AudioDuplexActivity"
+            android:label="AudioDuplex"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.thinktube.service.AudioDuplexActivity"
+            android:process="com.thinktube.service.AudioDuplexActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

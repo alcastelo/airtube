@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="horizontal"
+    tools:context=".VideoReceiverMultiActivity" >
+
+    <SurfaceView
+        android:id="@+id/decoder1"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <SurfaceView
+        android:id="@+id/decoder2"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/decoder1"
+        android:layout_marginLeft="5dp" />
+
+    <SurfaceView
+        android:id="@+id/decoder3"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp" />
+
+    <SurfaceView
+        android:id="@+id/decoder4"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/decoder3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:checked="true"
+        android:onClick="onButtonClicked"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+    <com.thinktube.android.view.LoggerScrollView
+        android:id="@+id/scroller"
+        android:layout_height="fill_parent"
+        android:layout_width="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toggleButton1"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="horizontal"
+    tools:context=".VideoSenderActivity" >
+
+    <com.thinktube.android.video.CameraPreview
+        android:id="@+id/encoder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ToggleButton
+        android:id="@+id/toggleOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:checked="true"
+        android:onClick="onButtonClicked"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+    <ToggleButton
+        android:id="@+id/toggleStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/toggleOn"
+        android:checked="true"
+        android:onClick="onStartButtonClicked"
+        android:textOff="@string/pause"
+        android:textOn="@string/play" />
+
+    <TextView
+        android:id="@+id/labelRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toggleStart"
+        android:text="@string/resolution" />
+
+    <Spinner
+        android:id="@+id/spinnerRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/labelRes" />
+
+    <TextView
+        android:id="@+id/labelFps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/spinnerRes"
+        android:text="@string/fps" />
+
+    <Spinner
+        android:id="@+id/spinnerFps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/labelFps" />
+
+    <TextView
+        android:id="@+id/labelIframes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/spinnerFps"
+        android:text="@string/iframes" />
+
+    <Spinner
+        android:id="@+id/spinnerIframes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/labelIframes" />
+
+    <TextView
+        android:id="@+id/labelBps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinnerIframes"
+        android:text="@string/bps" />
+
+    <Spinner
+        android:id="@+id/spinnerBps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/labelBps" />
+
+</RelativeLayout>

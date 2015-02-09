@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="/home/br1/tt/airtube/airtube.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/AirTube/airtube-jar-desc.jardesc" exportErrors="false" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=JavaVM/src&lt;com.thinktube.airtube.java{Main.java[Main" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=JavaVM/src"/>
+        <javaElement handleIdentifier="=API/src"/>
+        <javaElement handleIdentifier="=TTLibrary/src"/>
+        <javaElement handleIdentifier="=AirTube/src"/>
+    </selectedElements>
+</jardesc>

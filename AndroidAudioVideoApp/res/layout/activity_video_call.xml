@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="horizontal"
+    tools:context=".VideoCallActivity" >
+
+    <SurfaceView
+        android:id="@+id/decoder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <com.thinktube.android.video.CameraPreview
+        android:id="@+id/encoder"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="32dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:checked="true"
+        android:onClick="onButtonClicked"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/toggleButton1"
+        android:checked="true"
+        android:onClick="onStartButtonClicked"
+        android:textOff="@string/pause"
+        android:textOn="@string/play" />
+
+    <ToggleButton
+        android:id="@+id/toggleSpeaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/toggleButton2"
+        android:checked="true"
+        android:onClick="onSpeakerButtonClicked"
+        android:textOff="@string/headphones"
+        android:textOn="@string/speaker" />
+
+</RelativeLayout>

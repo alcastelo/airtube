@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">AirTube Monitor</string>
+
+    <string name="proxy_ip">220.110.201.21</string>
+
+</resources>

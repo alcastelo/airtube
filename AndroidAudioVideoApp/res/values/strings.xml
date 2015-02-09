@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VideoAudioServices</string>
+ 
+    <string name="resolution">Resolution</string>
+    <string name="fps">FPS</string>
+    <string name="iframes">I-Frames</string>
+    <string name="bps">Bitrate</string>
+
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+
+    <string name="headphones">Headphones</string>
+    <string name="speaker">Speaker</string>
+    <string name="aec">AEC</string>
+
+</resources>

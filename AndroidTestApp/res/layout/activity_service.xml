@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestServiceActivity" >
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:onClick="onButtonClicked"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_udp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/udp" />
+
+        <RadioButton
+            android:id="@+id/radio_tcp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/tcp" />
+
+        <RadioButton
+            android:id="@+id/radio_bcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/broadcast" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTOSRadioClicked"
+            android:text="@string/background" />
+
+        <RadioButton
+            android:id="@+id/radio_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onTOSRadioClicked"
+            android:text="@string/normal" />
+
+        <RadioButton
+            android:id="@+id/radio_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTOSRadioClicked"
+            android:text="@string/video" />
+
+        <RadioButton
+            android:id="@+id/radio_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTOSRadioClicked"
+            android:text="@string/voice" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/toggleButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:onClick="onPeriodicButtonClicked"
+        android:text="@string/periodic" />
+
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:onClick="onTestClicked"
+        android:text="@string/send_test_msg" />
+
+    <com.thinktube.android.view.LoggerScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
