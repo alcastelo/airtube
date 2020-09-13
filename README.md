@@ -47,7 +47,7 @@ AirTube is a general purpose networking library but we have developed it with a 
  * Real-time audio stream using the Opus codec (optional Speex, G711, AAC) including a Jitter Buffer implementation and echo cancellation
  * OpenCV processing on the sender and/or receiver side
  * Face detection
- * ...
+ * ....
 
 More documentation in the [Wiki](https://github.com/thinktube-kobe/airtube/wiki)
 
